@@ -9,7 +9,6 @@
     "enabled": false
   },
   "admin": {
-    "autoOpen": false,
-    "path": "/"
+    "autoOpen": false
   }
 }
