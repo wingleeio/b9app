@@ -32,13 +32,13 @@
       "type": "integer"
     },
     "CriticalRate": {
-      "type": "integer"
+      "type": "float"
     },
     "CriticalDamage": {
-      "type": "integer"
+      "type": "float"
     },
     "Agility": {
-      "type": "integer"
+      "type": "float"
     },
     "skills": {
       "collection": "skill",
