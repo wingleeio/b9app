@@ -3,7 +3,7 @@
   "connection": "default",
   "collectionName": "effects",
   "info": {
-    "name": "Effect"
+    "name": "effect"
   },
   "options": {
     "increments": true,
