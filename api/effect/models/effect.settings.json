@@ -1,0 +1,91 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "effects",
+  "info": {
+    "name": "Effect"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "skill": {
+      "model": "skill",
+      "via": "effects"
+    },
+    "Effect": {
+      "type": "enumeration",
+      "enum": [
+        "increase_attack",
+        "increase_defense",
+        "increase_health_points",
+        "increase_critical_rate",
+        "increase_critical_damage",
+        "increase_agility",
+        "increase_all_except_health",
+        "decrease_attack",
+        "decrease_defense",
+        "decrease_health_points",
+        "decrease_critical_rate",
+        "decrease_critical_damage",
+        "decrease_agility",
+        "decrease_all_except_health",
+        "increase_incoming_damage",
+        "decrease_incoming_damage",
+        "remove_debuff",
+        "remove_stat_reduction",
+        "silence",
+        "damage",
+        "fixed_damage",
+        "ignore_damage_reduction_damage",
+        "ignore_defense_damage",
+        "consume",
+        "attack_interference_immunity",
+        "stat_weakening_immunity",
+        "debuff_immunity",
+        "heal"
+      ]
+    },
+    "Stat": {
+      "type": "enumeration",
+      "enum": [
+        "attack",
+        "defense",
+        "health",
+        "critical_rate",
+        "critical_damage",
+        "agility",
+        "support"
+      ]
+    },
+    "Scales": {
+      "type": "boolean"
+    },
+    "amount": {
+      "type": "integer"
+    },
+    "Incremental": {
+      "type": "boolean"
+    },
+    "Name": {
+      "type": "string"
+    },
+    "Activates": {
+      "type": "enumeration",
+      "enum": [
+        "before_normal_attack",
+        "after_normal_attack",
+        "before_battle",
+        "when_enemy_dies",
+        "when_ally_dies",
+        "after_getting_normal_attacked",
+        "before_getting_normal_attacked",
+        "when_supporting_the_ally",
+        "when_supporting_the_enemy",
+        "when_enemy_grave_is_created",
+        "after_resurrection"
+      ]
+    }
+  }
+}

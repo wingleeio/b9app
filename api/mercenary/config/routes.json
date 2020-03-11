@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/mercenaries",
+      "handler": "mercenary.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mercenaries/count",
+      "handler": "mercenary.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mercenaries/:id",
+      "handler": "mercenary.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mercenaries",
+      "handler": "mercenary.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/mercenaries/:id",
+      "handler": "mercenary.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/mercenaries/:id",
+      "handler": "mercenary.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

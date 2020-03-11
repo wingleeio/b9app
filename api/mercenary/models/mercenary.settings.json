@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "mercenaries",
+  "info": {
+    "name": "Mercenary"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Class": {
+      "type": "enumeration",
+      "enum": [
+        "warrior",
+        "defender",
+        "magician",
+        "support"
+      ]
+    },
+    "Attack": {
+      "type": "integer"
+    },
+    "Health": {
+      "type": "integer"
+    },
+    "Defense": {
+      "type": "integer"
+    },
+    "CriticalRate": {
+      "type": "integer"
+    },
+    "CriticalDamage": {
+      "type": "integer"
+    },
+    "Agility": {
+      "type": "integer"
+    },
+    "skills": {
+      "via": "mercenaries",
+      "collection": "skill",
+      "dominant": true
+    },
+    "Illustration": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

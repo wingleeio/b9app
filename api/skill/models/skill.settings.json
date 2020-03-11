@@ -1,0 +1,101 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "skills",
+  "info": {
+    "name": "Skill"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "skill": {
+      "model": "skill",
+      "via": "skills"
+    },
+    "skills": {
+      "collection": "skill",
+      "via": "skill"
+    },
+    "Activates": {
+      "type": "enumeration",
+      "enum": [
+        "before_normal_attack",
+        "after_normal_attack",
+        "before_battle",
+        "when_enemy_dies",
+        "when_ally_dies",
+        "after_getting_normal_attacked",
+        "before_getting_normal_attacked",
+        "when_supporting_the_ally",
+        "when_supporting_the_enemy",
+        "when_enemy_grave_is_created",
+        "after_resurrection"
+      ],
+      "default": "before_battle",
+      "required": true
+    },
+    "Duration": {
+      "type": "integer",
+      "default": 0,
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "damage_over_time",
+        "bestowal",
+        "barrier",
+        "immunity",
+        "heal",
+        "stats_enhancement",
+        "stats_weakening",
+        "additional_damage",
+        "reflective_counter",
+        "taunt",
+        "special",
+        "removal",
+        "attack_interference",
+        "ignore",
+        "prohibition",
+        "concentrated_fire",
+        "stigma",
+        "guard",
+        "resurrection"
+      ],
+      "default": "additional_damage",
+      "required": true
+    },
+    "Target": {
+      "type": "enumeration",
+      "enum": [
+        "self",
+        "enemy",
+        "ally"
+      ],
+      "default": "enemy",
+      "required": true
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "effects": {
+      "via": "skill",
+      "collection": "effect"
+    },
+    "mercenaries": {
+      "collection": "mercenary",
+      "via": "skills"
+    },
+    "Illustration": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "Name": {
+      "type": "string"
+    }
+  }
+}
