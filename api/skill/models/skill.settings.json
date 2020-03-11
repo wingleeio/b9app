@@ -85,8 +85,8 @@
       "collection": "effect"
     },
     "mercenaries": {
-      "collection": "mercenary",
-      "via": "skills"
+      "via": "skills",
+      "collection": "mercenary"
     },
     "Illustration": {
       "model": "file",

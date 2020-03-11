@@ -23,7 +23,7 @@
       ]
     },
     "Attack": {
-      "type": "integer"
+      "type": "float"
     },
     "Health": {
       "type": "integer"
@@ -41,8 +41,8 @@
       "type": "integer"
     },
     "skills": {
-      "via": "mercenaries",
       "collection": "skill",
+      "via": "mercenaries",
       "dominant": true
     },
     "Illustration": {
