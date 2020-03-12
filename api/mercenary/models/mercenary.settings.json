@@ -77,6 +77,12 @@
       "via": "related",
       "plugin": "upload",
       "required": false
+    },
+    "AwakenedSprite": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
     }
   }
 }
