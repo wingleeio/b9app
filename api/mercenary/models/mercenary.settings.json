@@ -50,6 +50,27 @@
       "via": "related",
       "plugin": "upload",
       "required": false
+    },
+    "Rank": {
+      "type": "integer"
+    },
+    "Sprite": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "Avatar": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "CompanionIllustration": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
     }
   }
 }
