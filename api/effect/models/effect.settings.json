@@ -47,24 +47,6 @@
         "heal"
       ]
     },
-    "Stat": {
-      "type": "enumeration",
-      "enum": [
-        "attack",
-        "defense",
-        "health",
-        "critical_rate",
-        "critical_damage",
-        "agility",
-        "support"
-      ]
-    },
-    "Scales": {
-      "type": "boolean"
-    },
-    "amount": {
-      "type": "integer"
-    },
     "Incremental": {
       "type": "boolean"
     },
@@ -86,6 +68,9 @@
         "when_enemy_grave_is_created",
         "after_resurrection"
       ]
+    },
+    "Formula": {
+      "type": "text"
     }
   }
 }
