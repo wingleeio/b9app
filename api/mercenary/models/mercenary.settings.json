@@ -67,7 +67,13 @@
       "required": false
     },
     "CompanionIllustration": {
-      "collection": "file",
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "CompanionSprite": {
+      "model": "file",
       "via": "related",
       "plugin": "upload",
       "required": false
